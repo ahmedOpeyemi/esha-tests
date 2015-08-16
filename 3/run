@@ -1,0 +1,11 @@
+<html>
+<head>
+<script type="text/javascript" src="remove-duplicates.js"></script>
+</head>
+<body>
+<script>
+var sourceArray = [1, 3, 7, 7, 8, 9, 9, 9, 10];
+console.log(removeDuplicates(sourceArray));
+</script>
+</body>
+</html>

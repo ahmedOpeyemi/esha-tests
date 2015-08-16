@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Angular App</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>   
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/pouchdb-4.0.0.min.js"></script>
+    <script src="js/angular-pouchdb.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <h3>Address Book Sample App</h3>
+   <div ng-app="myApp" ng-controller="mainController">
+     First Name:<br>
+    <input type="text" ng-model="user.firstName"><br>
+    Last Name:<br>
+    <input type="text" ng-model="user.lastName"><br>
+    Phone No:<br>
+    <input type="text" ng-model="user.phoneNo"><br>
+    <button ng-click="save()">Save</button>
+    <p>
+        Message: {{saveMessage}}
+    </p>
+ 
+   <hr>
+   <h3>Saved Addresses</h3>
+    <input type="text" ng-model="searchPhoneNo"><br>
+   <button ng-click="search()">Search</button>
+<p>Search Message: {{searchMessage}}</p>
+{{returnedUser.firstName}} --> {{returnedUser.lastName}} --> {{returnedUser.phoneNo}}
+     </div>
+</body>
+</html>

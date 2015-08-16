@@ -1,0 +1,11 @@
+<html>
+<head>
+<script type="text/javascript" src="find-characters.js"></script>
+</head>
+<body>
+<script>
+console.log('Order N*N = '+ find_chars('hello','ahmedo'));
+console.log('Order N = '+ find_chars_n('hello','ahmedo'));
+</script>
+</body>
+</html>
