@@ -1,0 +1,4 @@
+My proposed algorithm will involve the use of recursion.
+Each of the Node of the left part of the tree is transversed, looking for a child node, each of the child node is also transversed
+to look for inner node, once the recuursion is completed on that node, the parent loop moves on to the next node.
+But of course, the order of transversing the node would be in-order i.e from left to the root to the right.
